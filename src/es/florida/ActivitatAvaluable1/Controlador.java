@@ -39,7 +39,7 @@ public class Controlador {
 		actionDirectoriTreball = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (vista.getTextAreaNomDirectori().getText().isBlank()) {
+				if (vista.getTextAreaNomDirectori().getText().equalsIgnoreCase("")) {
 					JOptionPane.showMessageDialog(null, "<html><h3>Valor del directori nul</h3></html>",
 							"ERROR VALOR NUL", JOptionPane.WARNING_MESSAGE);
 				} else {
@@ -57,7 +57,7 @@ public class Controlador {
 		actionTrovarStringArxiu = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (vista.getTextFieldBuscarString().getText().isBlank()) {
+				if (vista.getTextFieldBuscarString().getText().equalsIgnoreCase("")) {
 					JOptionPane.showMessageDialog(null, "<html><h3>Valor de la paraula a trovar nul</h3></html>",
 							"ERROR VALOR NUL", JOptionPane.WARNING_MESSAGE);
 				} else {
@@ -73,7 +73,7 @@ public class Controlador {
 		actionReemplasarStringArxiu = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (vista.getTextFieldBuscarString().getText().isBlank()) {
+				if (vista.getTextFieldBuscarString().getText().equalsIgnoreCase("")) {
 					JOptionPane.showMessageDialog(null, "<html><h3>Valor de la paraula a trovar nul</h3></html>",
 							"ERROR VALOR NUL", JOptionPane.WARNING_MESSAGE);
 				} else {
@@ -81,7 +81,7 @@ public class Controlador {
 					model.setParaulaTrovar(vista.getTextFieldBuscarString().getText());
 					model.setAcents(vista.getChckbxNewCheckBoxAccents().isSelected());
 					model.setMajusculesMinuscules(vista.getChckbxNewCheckBoxMajusculesMinuscules().isSelected());
-					if (vista.getTextFieldReemplasar().getText().isBlank()) {
+					if (vista.getTextFieldReemplasar().getText().equalsIgnoreCase("")) {
 						JOptionPane.showMessageDialog(null,
 								"<html><h3>Valor de la paraula a reemplaçar nul</h3></html>", "ERROR VALOR NUL",
 								JOptionPane.WARNING_MESSAGE);
