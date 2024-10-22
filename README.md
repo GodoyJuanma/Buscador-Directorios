@@ -2,4 +2,4 @@
 <h3>VIDEO DEMOSTRATIVO</h3>
 ## Video de Presentación
 
-[![Video de Presentación](https://vimeo.com/1022137338)](https://vimeo.com/1022137338)
+[![Video de Presentación](https://i.vimeocdn.com/video/1022137338.jpg)](https://vimeo.com/1022137338)
